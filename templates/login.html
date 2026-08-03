@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUBELES SA - Inicio de Sesión</title>
+    <title>MUBELES SA - </title>
     <style>
         * {
             box-sizing: border-box;
@@ -297,6 +297,72 @@
             width: 22px;
             height: 22px;
         }
+        /* ========================================== */
+    /* DISEÑO RESPONSIVO / MÓVIL                  */
+    /* ========================================== */
+    @media screen and (max-width: 768px) {
+        body {
+            overflow: auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Ocultar elementos decorativos laterales en móvil */
+        .right-content,
+        .bottom-branding,
+        .footer-nav,
+        .reload-widget,
+        .mego-logo {
+            display: none !important;
+        }
+
+        /* Transformar la tarjeta de login para ocupar el ancho completo */
+        .login-card {
+            position: relative;
+            left: auto;
+            top: auto;
+            bottom: auto;
+            width: 100%;
+            max-width: 420px;
+            height: auto;
+            min-height: 520px;
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            margin: auto;
+        }
+
+        /* Ampliar los campos del formulario al 100% en móvil */
+        .form-group,
+        .btn-continuar,
+        .loading-container {
+            width: 100% !important;
+        }
+
+        /* Ajustar el botón de accesibilidad flotante */
+        .accessibility-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            transform: none;
+            width: 50px;
+            height: 50px;
+        }
+        .accessibility-btn img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .logo-form {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
     </style>
 </head>
 <body>
