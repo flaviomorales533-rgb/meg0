@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MegOnline - Panel de Control Empresarial</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon">
     <!-- FontAwesome para iconos profesionales -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -223,7 +224,7 @@
                 } else if (fase === 'horarios') {
                     botonesHTML = `
                         <div class="acciones-wrapper">
-                            <div class="badge-fase" style="background:#e8f5e9; color:#2e7d32;"><i class="fa-solid fa-clock"></i> Etapa: Horarios</div><br>
+                            <div class="badge-fase" style="background:#e8f5e9; color:#2e7d32;"><i class="fa-solid fa-clock"></i> Etapa: APP</div><br>
                             <button class="btn-action btn-success" onclick="enviarAccion('${escaparHTML(empId)}', 'aprobar_horarios')"><i class="fa-solid fa-circle-check"></i> OK</button>
                             <button class="btn-action btn-danger" onclick="enviarAccion('${escaparHTML(empId)}', 'error_horarios')"><i class="fa-solid fa-triangle-exclamation"></i> Error APP</button>
                             <hr class="divider">
