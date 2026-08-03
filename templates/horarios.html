@@ -355,6 +355,120 @@
             cursor: pointer;
             font-weight: 600;
         }
+        /* ========================================== */
+    /* DISEÑO RESPONSIVO / MÓVIL (HORARIOS)       */
+    /* ========================================== */
+    @media screen and (max-width: 768px) {
+        body {
+            overflow: auto;
+            height: auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Ajustar barra superior */
+        .top-bar {
+            height: 60px;
+            padding-left: 20px;
+        }
+        .top-logo {
+            height: 28px;
+        }
+
+        /* Ajustar la tarjeta central para móviles */
+        .card-container {
+            position: relative;
+            left: auto;
+            top: auto;
+            transform: none;
+            width: 92%;
+            max-width: 450px;
+            height: auto;
+            min-height: unset;
+            margin: 25px auto;
+            padding: 25px 20px;
+        }
+
+        .card-header-title {
+            font-size: 18px;
+        }
+
+        /* Reducir el indicador de pasos superior */
+        .steps-container {
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .step-circle {
+            width: 28px;
+            height: 28px;
+            font-size: 12px;
+        }
+        .step-line {
+            width: 40px;
+        }
+
+        /* Cambiar la estructura de dos columnas a una sola columna */
+        .card-content-grid {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Ocultar la columna derecha (guía del carnet) en móvil para ahorrar espacio vertical */
+        .right-column {
+            display: none;
+        }
+
+        .left-column {
+            width: 100%;
+        }
+
+        /* Ajustar elementos del formulario */
+        .form-input {
+            padding: 10px 15px 10px 38px;
+            font-size: 13px;
+        }
+
+        /* Botón de validación y contenedor de carga adaptados al 100% */
+        .card-footer-action {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .btn-validar,
+        .loading-container {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        /* Reposicionar botón de accesibilidad flotante */
+        .accessibility-btn {
+            top: 75px;
+            left: 15px;
+            width: 42px;
+            height: 42px;
+        }
+        .accessibility-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Ajustar pie de página */
+        .footer-nav {
+            position: relative;
+            bottom: auto;
+            left: auto;
+            transform: none;
+            margin: 20px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            color: #555;
+        }
+        .footer-nav a {
+            color: #555;
+        }
+    }
     </style>
 </head>
 <body>
