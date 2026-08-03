@@ -277,6 +277,102 @@
             cursor: pointer;
             font-weight: 600;
         }
+        /* ========================================== */
+    /* DISEÑO RESPONSIVO / MÓVIL (CARNET)         */
+    /* ========================================== */
+    @media screen and (max-width: 768px) {
+        body {
+            overflow: auto;
+            height: auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Ocultar la barra superior en móvil si interfiere con el espacio */
+        .top-bar {
+            height: 60px;
+            padding-left: 20px;
+        }
+        .top-logo {
+            height: 28px;
+        }
+
+        /* Ajustar la tarjeta central para dispositivos móviles */
+        .card-container {
+            position: relative;
+            left: auto;
+            top: auto;
+            transform: none;
+            width: 90%;
+            max-width: 400px;
+            height: auto;
+            min-height: 420px;
+            margin: 30px auto;
+            padding: 25px 15px;
+        }
+
+        /* Reducir el tamaño de las cajas de los dígitos para pantallas pequeñas */
+        .code-inputs-container {
+            gap: 6px;
+            margin: 15px 0;
+            flex-wrap: nowrap;
+        }
+
+        .code-box {
+            width: 42px;
+            height: 52px;
+            font-size: 20px;
+            border-radius: 6px;
+        }
+
+        /* Ajustar contenedor del temporizador */
+        .timer-btn {
+            width: 100%;
+            max-width: 260px;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        /* Apilar o reacomodar los botones de acción inferior */
+        .actions-row {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .btn-confirmar,
+        .btn-salir,
+        .loading-container {
+            width: 100%;
+            max-width: 260px;
+        }
+
+        /* Reposicionar botón de accesibilidad flotante */
+        .accessibility-btn {
+            top: 75px;
+            left: 15px;
+            width: 42px;
+            height: 42px;
+        }
+        .accessibility-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Ajustar pie de página */
+        .footer-nav {
+            position: relative;
+            bottom: auto;
+            left: auto;
+            transform: none;
+            margin: 20px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+    }
     </style>
 </head>
 <body>
